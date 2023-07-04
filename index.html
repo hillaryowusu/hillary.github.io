@@ -1,163 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Webpage</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-
-    .logo h1 {
-      font-size: 24px;
-      margin: 0;
-    }
-
-    nav {
-      display: flex;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-left: 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    nav ul li a:hover {
-      background-color: #555;
-    }
-
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-    }
-
-    h1 {
-      color: #333;
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      color: #666;
-      font-size: 24px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    .contact-info {
-      margin-top: 30px;
-    }
-
-    .contact-info p {
-      margin-bottom: 5px;
-    }
-
-    .contact-info strong {
-      font-weight: bold;
-    }
-  </style>
+    <link rel="stylesheet" href="personal-website/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+    <title>Yu (Hope) Hou</title>
 </head>
-
 <body>
-  <header>
-    <div class="logo">
-      <img src="profilepic.png" alt="Your Photo">
-      <h1>Your Name</h1>
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+            <strong class="navbar-brand">Yu (Hope) Hou / 侯宇</strong>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publication">Publications</a></li>
+<!--                    <li><a href="#education">Education</a></li>-->
+<!--                    <li><a href="#experience">Experience</a></li>-->
+<!--                    <li><a href="#teaching">Teaching</a></li>-->
+                    <li><a href="personal-website/CV/Yu_Hope_Hou_CV.pdf">CV</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>About Me</h2>
-    <p>
-      Hello! I am [Your Name], a PhD candidate specializing in [your field of study]. I am passionate about exploring
-      [specific area of interest] and developing innovative solutions for [related challenges].
-    </p>
+    <div class="gray-container" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 img">
+                    <img style="" id="me-img" src="personal-website/images/Hope.jpg" alt="">
+                </div>
+                <div class="col-xs-8">
+                    <h2>Yu (Hope) Hou</h2>
+                    <p style="font-size: 14px;">
+                        Find me:
+                        <a href="https://twitter.com/houyu0930" style="font-size: 14px;">[Twitter]</a>
+                        <a href="https://github.com/houyu0930" style="font-size: 14px;">[GitHub]</a>
+                        <a href="https://www.linkedin.com/in/yu-hope-hou/" style="font-size: 14px;">[LinkedIn]</a>
+                        <a href="https://scholar.google.com/citations?user=2U1WiMMAAAAJ" style="font-size: 14px;">[Google Scholar]</a>
+                        <a href="mailto:houyu@usc.edu" style="font-size: 14px;">[Email]</a> (houyu [at] usc [dot] edu)
+                    </p>
+                    <p>
+                        Hi there! 👋 I am a software engineer at <a href="https://www.flouriship.com/">Flourish Science</a>, a start-up formed by a motivated and inspired team to help people live a happier and more meaningful life.
+                    </p>
+                    <p>
+                        <!-- I am a software engineer at <a href="https://www.flouriship.com/">Flourish Science</a>, a start-up formed by a motivated and inspired team to help people live a happier and meaningful life. -->
+                        <!-- I am also an incoming PhD student at University of Maryland, College Park, working with <a href="http://rudinger.github.io/">Prof. Rachel Rudinger</a> and <a href="http://users.umiacs.umd.edu/~hal">Prof. Hal Daumé III</a>. -->
+                        I earned my master’s degree from University of Southern California, where I worked with <a href="https://vnpeng.net//index.html">Prof. Nanyun Peng</a> on natural language processing (NLP) research. I will also pursue my PhD later at University of Maryland, College Park, working with <a href="http://rudinger.github.io/">Prof. Rachel Rudinger</a> and <a href="http://users.umiacs.umd.edu/~hal">Prof. Hal Daumé III</a>.
+                    </p>
+                    <p>
+<!--                        I am interested in socially intelligent NLP, where I hope one day the technology is smart enough-->
+<!--                        to understand people from the psycholinguistics or cognitive perspective and help people in need mentally and emotionally.-->
+<!--                        Currently, I am working on fairness in NLP and language generation.-->
 
-    <h2>PhD Projects</h2>
-    <p>
-      In my doctoral research, I have been focusing on [briefly describe your PhD projects]. I aim to [state the goal of
-      your research] and have achieved significant progress in [mention key findings or accomplishments].
-    </p>
+<!--                        I am interested in exploring NLP from social perspective, like learning implicit social common sense,-->
+<!--                        analyzing data from social media, detecting social bias, and also making robust models to mitigate biases.-->
+<!--                        I hope one day the technology is smart enough to help people in need mentally and emotionally.-->
+<!--                        Currently, I am working on fairness in NLP and language generation.-->
 
-    <h2>Interests</h2>
-    <p>
-      Apart from my academic pursuits, I have diverse interests in [list your non-academic interests]. These activities
-      help me maintain a healthy work-life balance and contribute to my personal growth.
-    </p>
+<!--                        My research goal is to explore NLP from different perspectives (e.g. implicit common sense inference, machine interpretability, or psycholinguistics modeling) to better understand text data and do trustworthy generation. -->
 
-    <div class="contact-info">
-      <h2>Contact Me</h2>
-      <p>
-        If you would like to get in touch or learn more about my work, feel free to reach out to me at:
-      </p>
-      <p>
-        <strong>Email:</strong> [your email address]
-      </p>
-      <p>
-        <strong>Phone:</strong> [your phone number]
-      </p>
+                        <!-- Broadly, I am interested in human-centered trustworthy and socially aware NLP (e.g. commonsense reasoning, bias and fairness in NLP, etc.). I am passionate about learning language from social perspectives and exploring intersections between linguistics and psychology. -->
+                        Broadly, I am interested in human-centered trustworthy and socially aware NLP. I am passionate about learning language from society perspectives and exploring intersections between linguistics and psychology.
+                    </p>
+                    <p>
+<!--                        To be specific, I am super interested in learning language from social perspectives, like understanding social norms or detecting potential fairness issues and making robust systems to mitigate biases. -->
+
+                        <!-- I hope through language, machine could be a better "friend" of human, showing deep understanding, being less biased, and with empathy. -->
+                        <!-- I hope to be a strong engineer and scientist, bringing language technoligies to help people live a better life. 🌿 -->
+                    </p>
+                    <p>
+                        Currently, I am learning how to make AI help people think positively. 🌿
+<!--                         Currently, I am exploring fairness in NLP and language generation. -->
+<!--                         I am going to apply for PhD program this year (for Fall 2022 admission)! -->
+<!--                         I am happy to chat anything about NLP and open to collaborations or opportunities! 🤗 -->
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
+
+    <div id="publication">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="row work-block">
+                <div class="col-xs-3">Preprint</div>
+                <div class="col-xs-9">
+                    Jiao Sun*, <strong><u>Yu Hou*</u></strong>, Jiin Kim and Nanyun Peng
+                    <br>Investigating the Helpfulness of Information-Seeking Dialogue Systems and its Fairness Implication
+                    <!-- <a href="https://arxiv.org/pdf/2205.12554.pdf">[paper]</a> -->
+                </div>
+
+                <p style="color: white">-</p>
+
+                <div class="col-xs-3">AACL'22</div>
+                <div class="col-xs-9">
+                    Sunipa Dev*, Emily Sheng*, Jieyu Zhao*, Aubrie Amstutz*, Jiao Sun, <strong><u>Yu Hou</u></strong>, Mattie Sanseverino, Jiin Kim, Akihiro Nishi, Nanyun Peng and Kai-Wei Chang
+                    <br>On Measures of Biases and Harms in NLP
+                    <a href="https://arxiv.org/abs/2108.03362">[paper]</a>
+                </div>
+
+                <p style="color: white">-</p>
+
+                <div class="col-xs-3">ACL'21 (Findings)</div>
+                <div class="col-xs-9">
+                    Shikhar Singh*, Nuan Wen*, <strong><u>Yu Hou</u></strong>, Pegah Alipoormolabashi, Te-lin Wu, Xuezhe Ma and Nanyun Peng
+                    <br>COM2SENSE: A Commonsense Reasoning Benchmark with Complementary Sentences
+                    <a href="https://aclanthology.org/2021.findings-acl.78/">[paper]</a>
+                    <a href="https://github.com/google/BIG-bench/tree/main/bigbench/benchmark_tasks/com2sense">[in <strong><u>BIG-bench</u></strong> tasks]</a>
+                </div>
+
+                <p style="color: white">-</p>
+
+                <div class="col-xs-3">INTERSPEECH'20</div>
+                <div class="col-xs-9">
+                    Qingjian Lin, <strong><u>Yu Hou</u></strong> and Ming Li
+                    <br>Self-Attentive Similarity Measurement Strategies in Speaker Diarization
+                    <a href="http://www.interspeech2020.org/uploadfile/pdf/Mon-1-7-5.pdf">[paper]</a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="row work-block">
+                <div class="col-xs-3">Jan 2020 - Dec 2021</div>
+                <div class="col-xs-8">
+                    University of Southern California, MSc in Computer Science
+                </div>
+            </div>
+            <div class="row work-block">
+                <div class="col-xs-3">Sep 2015 - June 2019</div>
+                <div class="col-xs-8">
+                    Beijing University of Posts and Telecommunications, BSc (Eng)
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="row work-block">
+                <div class="col-xs-3">May 2023 - </div>
+                <div class="col-xs-8">Software Engineer , <a href="https://www.flouriship.com/">Flourish Science</a> (Mountain View, CA)</div>
+
+                <div class="col-xs-3">Apr 2022 - Jan 2023</div>
+                <div class="col-xs-8">Software Engineer , Google, I18N NLP Localization team (Mountain View, CA)</div>
+
+                <div class="col-xs-3">May 2021 - Aug 2021</div>
+                <div class="col-xs-8">Software Dev Engineer Intern, Amazon, AWS EC2 PrivateLink team (Seattle, WA)</div>
+
+                <div class="col-xs-3">Sept 2019 - Dec 2019</div>
+                <div class="col-xs-8">Research Intern, Duke Kunshan University, SMIIP Lab led by <a href="https://scholars.duke.edu/person/MingLi">Prof. Ming Li</a> (Kunshan, China)</div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="misc">
+        <div class="container">
+            <h2>Teaching</h2>
+            <div class="row work-block">
+                <div class="col-xs-3">
+                        Fall 2021, Spring 2021
+                </div>
+                <div class="col-xs-8">
+                    Teaching Assistant for <a href="https://bytes.usc.edu/cs455/">CSCI 455x: Introduction to Programming Systems Design</a> at University of Southern California
+                </div>
+            </div>
+            <div class="row work-block">
+                <div class="col-xs-3">
+                        Fall 2019 (Session 2)
+                </div>
+                <div class="col-xs-8">
+                    Teaching Assistant for STATS102: Introduction to Data Science at Duke Kunshan University
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <br>
+    <footer class="container footer">
+        <div class="row">
+            <div class="text-center" style="color:#7F7C82; font-size: 14px">
+                Last update: May 2023 by Yu (Hope). Credit to
+                <a href='https://sunjiao123sun.github.io/' style="color:#7F7C82; font-size: 14px">Jiao Sun</a>.
+            </div>
+        </div>
+    </footer>
+
+
 </body>
-
 </html>
